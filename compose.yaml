@@ -1,0 +1,8 @@
+services:
+  caddy:
+    build:
+      context: .  # Path to the directory containing the Dockerfile
+    container_name: h4ks-community-page
+    ports:
+      - "8111:80"
+    restart: always
